@@ -1,0 +1,264 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/*
+ * Custom Style Sheet - Use this file to style your content
+	AGILFARMA - MARCELO RODRIGUES
+ */
+ /* alinhamento direito pesquisa*/
+ 
+ body{
+	background:#ededee url(../images/fundo.png) ;
+}
+
+.wrapper {
+	margin-top:7px;
+	margin-bottom:7px;
+    background-color: #FFFFFF;
+    max-width: 980px;
+}
+ #search {
+    float: right;
+    margin-right: 15px;
+}
+
+
+ /* alinhamento direito esquerdo do menu*/
+#logo, #logo > img, #menu {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+#headerbar .module {
+    float: right;
+    margin-right: 0;
+    max-width: 600px;
+}
+
+
+ #system .title a { /* tamanho da fonte dos titulos das noticias */
+    color: #92072D;
+    font-size: 15px;
+}
+
+#system .items .item:first-child { /* tamanho,cores, e borda 1ª linha de itens*/
+    background-color: #FFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px 8px 8px 8px;
+    margin-top: 0;
+    padding: 5px;
+	min-height:270px;
+}
+
+#system .items .item {/* tamanho,cores, e borda 2ª linha de itens*/
+    background-color: #FFF;
+      background-color: #FFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px 8px 8px 8px;
+    margin-top: 12px;
+    padding: 5px;
+    margin-bottom: 15px;
+	/*min-height:270px;*/
+}
+
+#system .title {
+    height: 39px;
+    margin-top: 0;
+}
+
+#system .item > .content > *:last-child:not(.grid-gutter) {
+    margin-bottom: 0;
+    min-height: 80px;
+}
+
+/*------------------------------ formulário */
+
+.ccms_form_element input, textarea, input[type="file"] {
+    border: 1px solid #D3D3D3;
+    margin-bottom: 5px;
+    padding: 6px !important;
+    width: 90%;
+
+}
+
+
+.ccms_form_element {
+    clear: both;
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+}
+.chronoform { display:none; }
+
+
+
+ /****************** menu ***********************/
+
+/* Mega Drop-Down Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Level 1 */
+
+#menu{ margin-left:0px; 	}
+
+#menubar{
+	width:96%;
+	padding-left:10px;
+	border:1px solid #CCCCCC; 
+	border-radius:8px;
+	margin:0 0 0 15px;
+	background:url(../images/menu_fundo.jpg) repeat;
+
+	}
+.menu-dropdown { 
+	margin-bottom: -10px;
+	
+	
+	}
+
+.menu-dropdown li.level1 {
+	margin: 10px 5px 15px 0px;
+	padding: 0px 20px 5px 10px;
+	background: url(../images/menu_separador.png) right center no-repeat;
+	
+}
+
+.menu-dropdown a.level1,
+.menu-dropdown span.level1 {
+	border: none;
+	color: #444;
+}
+
+/* Set Active */
+.menu-dropdown li.active .level1 { color: #48b; }
+
+/* Set Hover */
+.menu-dropdown li.level1:hover .level1,
+.menu-dropdown li.remain .level1 {
+color: #FFF; 
+border-radius: 8px 0px 8px 0px;
+background-color:#900027;
+}
+
+/* Drop-Down */
+.menu-dropdown .dropdown {
+	top: 42px;
+	border-top: 1px solid #DDD;
+}
+
+.menu-dropdown .dropdown-bg > div {
+	padding: 5px 5px;
+	border: 1px solid #ddd;
+	border-top: none;
+	background: #F1F1F3;
+}
+
+
+/* Level 2 */
+.menu-dropdown li.level2 { 
+	margin: 0 5px;
+	border-top:none;
+}
+.menu-dropdown li.level2:first-child { border: none; }
+
+.menu-dropdown a.level2,
+.menu-dropdown span.level2 { color: #444; background:#F1F1F3; }
+
+.menu-dropdown a.level2 > span, .menu-dropdown span.level2 > span {
+    line-height: 21px;
+    overflow: hidden;
+    padding: 7px 7px 7px 7px;
+}
+
+/* Set Hover */
+.menu-dropdown a.level2:hover { color: #FFF; background-color:#CC3333; border-radius:5px;}
+
+/* Set Current */
+/*.menu-dropdown a.current.level2 { color: #444; font-weight:normal;} */
+
+/* Set Hover */
+.menu-dropdown a.level3:hover { color: #CCC; }
+
+/* Set Current */
+.menu-dropdown a.current.level3 { font-weight: bold; } 
+
+
+/* Sidebar/Accordion Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Link */
+.menu-sidebar a,
+.menu-sidebar li > span { color: #444;  }
+
+/* Hover */
+.menu-sidebar a:hover,
+.menu-sidebar li > span:hover { color: #FFF; background-color:#900027; border-radius: 8px 0px 8px 0px; padding-left: 8px;}
+
+/* Current */
+.menu-sidebar a.current { font-weight: bold; }
+
+/* Level 1 */
+.menu-sidebar li.level1 { border-top: 1px solid #ddd; }
+.menu-sidebar li.level1:first-child { border-top: none; }
+
+.menu-sidebar li.parent .level1 > span { background: url(../images/menu_sidebar_parent.png) 100% 0 no-repeat; }
+.menu-sidebar li.parent.active .level1 > span { background-position: 100% -30px; }
+
+/* Level 2-4 */
+.menu-sidebar ul.level2 ul { padding-left: 10px; }
+
+/*  FIM Sidebar/Accordion Menu
+----------------------------------------------------------------------------------------------------*/
+
+
+/****************** fim menu ***********************/
+
+/***************** PESQUISA ************************/
+
+#search{
+	margin-top: 10px;
+	margin-right:15px;
+	
+}
+.searchbox {
+    background: #FFF url("../images/searchbox_magnifier.png") no-repeat scroll 0 50% transparent;
+    border-top: 1px solid #777777;
+	border-right: 1px solid #777777;
+	border-bottom: 1px solid #D2D2D2;
+	border-left: 1px solid #B0B0B0;
+    height: 30px;
+    padding: 0 25px;
+    width: 100px;
+
+}
+
+
+.searchbox input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium  #FFF;
+    float: left;
+    outline: medium none;
+    padding: 0;
+    width: 100%;
+}
+/***************** FIM PESQUISA ************************/
+
+/**************** bordas dos box ************************/
+
+.mod-box {
+   border: none;
+    padding: 15px;
+}
+/**************** FIM bordas dos box ************************/
+
+/**************** Ajuste galeria inicial ************************/
+
+
+.spotlight {
+    display: inline-block;
+    max-width: 100%;
+   /* width: 100%;*/
+}
+
+/**************** FIM Ajuste galeria inicial  ************************/
